@@ -156,23 +156,12 @@
 
 .grid-cards {
   display: grid;
-  grid-template-columns:repeat( auto-fit,
-  minmax(150px, 0.2fr));
-  gap: 32px;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 0.1fr));
+  grid-gap: 20px;
+  align-items: stretch;
 
   @media screen and (max-width: 768px) {
     grid-template-columns: 1fr;
   }
 
-  @media screen and (min-width: 769px) and (max-width: 1024px) {
-    margin-top: 50px;
-    grid-template-columns: repeat(auto-fit, minmax(180px, 0.3fr)); 
-    gap: 25px;
-  }
-
-  @media screen and (min-width: 1025px) {
-    margin-top: 50px;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 0.2fr)); 
-    gap:32px; 
-  }
 }
